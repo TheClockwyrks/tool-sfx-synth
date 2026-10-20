@@ -4,17 +4,19 @@ edition.workspace = true
 version.workspace = true
 license.workspace = true
 publish.workspace = true
+repository.workspace = true
+description = "The sfx-synth binary a run image carries to synthesize a sound effect from oscillators and noise, one operation at a time."
 
 # The `sfx-synth` binary: procedural sound-effect synthesis (`asset_kind =
 # "sfx-synth"`) — a modular synth op graph, no samples. A thin CLI over
 # `test-cabinet-audio-core` (the DSP, mixer, render engine, and preview renderers).
-# See `apps/docs/src/content/docs/testing/asset-generation/audio-binaries.md`.
+# See https://docs.testcabinet.ai/testing/asset-generation/audio-binaries/.
 [[bin]]
 name = "sfx-synth"
 path = "src/main.rs"
 
 [dependencies]
-test-cabinet-audio-core = { path = "../audio-core" }
+test-cabinet-audio-core = { workspace = true }
 clap = { workspace = true }
 
 [lints]

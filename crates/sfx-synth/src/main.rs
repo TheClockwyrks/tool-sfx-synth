@@ -6,7 +6,7 @@
 //! `render`, which mixes the recorded voices and effects down to the `.wav` and draws
 //! the waveform + spectrogram preview. The subcommand `--help` is the whole contract;
 //! a case seeds no operations schema. See
-//! `apps/docs/src/content/docs/testing/asset-generation/audio-binaries.md`.
+//! <https://docs.testcabinet.ai/testing/asset-generation/audio-binaries/>.
 
 use std::path::PathBuf;
 use std::process::ExitCode;
